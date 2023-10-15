@@ -4,8 +4,6 @@ import random
 import time
 
 import requests
-from flask import Flask
-
 
 def display(text, colour=None):
   '''Displays text in the output, with the optional colour feature.'''
