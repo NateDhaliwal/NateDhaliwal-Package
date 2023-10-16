@@ -7,7 +7,7 @@ setup(
     author='Nate Dhaliwal',
     author_email='nathaniel.shaan@gmail.com',
     url='https://github.com/NateDhaliwal/NateDhaliwal-Package',
-    packages=['natedhaliwal_package'],
+    packages=["natedhaliwal_package"],
     install_requires=[
       "python>=3.10.0,<3.11",
       "flask>=3.0.0",

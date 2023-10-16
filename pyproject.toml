@@ -2,11 +2,11 @@
 name = "natedhaliwal-package"
 version = "1.0.0"
 description = "A simple package to help code Python easier."
-authors = ["Nate Dhaliwal nathaniel.shaan@gmail.com"]
+authors = ["Nate Dhaliwal <nathaniel.shaan@gmail.com>"]
 include = ["__init__.py", "pyproject.toml", "example.py"]
 
 [tool.poetry.dependencies]
-python = ">=3.6"
+python = "^3.6"
 flask = "^3.0.0"
 requests = "^2.31.0"
 setuptools = "^68.2.2"
