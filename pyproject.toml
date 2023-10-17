@@ -3,14 +3,27 @@ name = "natedhaliwal-package"
 version = "1.0.0"
 description = "A simple package to help code Python easier."
 authors = ["Nate Dhaliwal <nathaniel.shaan@gmail.com>"]
-include = ["__init__.py", "pyproject.toml", "example.py"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+]
+license = "MIT"
+repository = "https://github.com/NateDhaliwal/NateDhaliwal-Package"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/NateDhaliwal/NateDhaliwal-Package/issues"
+Replit = "https://replit.com/@NateDhaliwal/natedhaliwalpackage"
 
 [tool.poetry.dependencies]
 python = "^3.6"
 flask = "^3.0.0"
 requests = "^2.31.0"
-setuptools = "^68.2.2"
-twine = "^4.0.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
