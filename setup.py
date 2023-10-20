@@ -9,8 +9,8 @@ setup(
     url='https://github.com/NateDhaliwal/NateDhaliwal-Package',
     packages=["natedhaliwal"],
     install_requires=[
-      "python>=3.10.0,<3.11",
+      "python>=3.7,<4.0",
       "flask>=3.0.0",
-      "requests>=2.31.0"
+      "requests>2.31.0,<3.0.0"
     ],
 )

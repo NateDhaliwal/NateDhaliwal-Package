@@ -21,7 +21,7 @@ repository = "https://github.com/NateDhaliwal/NateDhaliwal-Package"
 Replit = "https://replit.com/@NateDhaliwal/natedhaliwalpackage"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 flask = "^3.0.0"
 requests = "^2.31.0"
 
