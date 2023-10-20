@@ -13,4 +13,14 @@ setup(
       "flask>=3.0.0",
       "requests>2.31.0,<3.0.0"
     ],
+
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "Natural Language :: English",
+    ]
 )
