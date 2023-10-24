@@ -1,1 +1,1 @@
-import natedhaliwal.example as natedhaliwal
+from natedhaliwal.example import *

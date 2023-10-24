@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "natedhaliwal"
-version = "1.0.1"
+version = "1.0.2"
 description = "A simple package to help code Python easier."
 authors = ["Nate Dhaliwal <nathaniel.shaan@gmail.com>"]
 readme = "README.md"
@@ -22,7 +22,6 @@ Replit = "https://replit.com/@NateDhaliwal/natedhaliwalpackage"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-flask = "^3.0.0"
 requests = "^2.31.0"
 
 [build-system]
