@@ -7,30 +7,30 @@ import requests
 
 def display(text, colour=None):
   '''Displays text in the output, with the optional colour feature.'''
-  empty = "\033[1m"
+  empty = "\033[0m"
   bold = "\033[1m"
   italic = "\033[3m"
   underline = "\033[4m"
-  black = "\033[30m"
+  grey = "\033[30m"
   red = "\033[31m"
-  green = "\033[32m"
+  pink = "\033[32m"
   yellow = "\033[33m"
   blue = "\033[34m"
   purple = "\033[35m"
-  cyan = "\033[36m"
+  green = "\033[36m"
 
   color_dict = {
     'empty': empty,
     'bold': bold,
     'italic': italic,
     'underline': underline,
-    'black': black,
+    'grey': grey,
     'red': red,
-    'green': green,
+    'pink': pink,
     'yellow': yellow,
     'blue': blue,
     'purple': purple,
-    'cyan': cyan,
+    'green': green,
   }
 
   if colour:
@@ -46,18 +46,6 @@ def display(text, colour=None):
     # If no color was specified, print the text without any formatting
     print(text)
 
-
-def add(number1,number2):
-  '''This adds 2 numbers specified together.'''
-  return number1+number2
-
-def divide(number1,number2):
-  '''This divides the second number by the first number, with the decimal.'''
-  return number1/number2
-
-def floorDivide(number1,number2):
-  '''This divides the second number by the first number, without the decimal.'''
-  return number1//number2
 
 def clear():
   '''Clears the output to a blank screen.'''
