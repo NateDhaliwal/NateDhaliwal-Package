@@ -2,7 +2,7 @@ import json
 import os
 import random
 import time
-
+import sys
 import requests
 
 def display(text, colour=None):
@@ -69,17 +69,13 @@ def wait(seconds):
 
 def scrape(website_url):
   '''Scrapes the given website and returns the data in json format.'''
-  url=website_url
-  if url.startswith('http://'):
-    if url.status_code==200:  
-      r=requests.get(url)
-      data=r.json()
-      return data
-    else:
-      return '\033[31mError: Website not found\033[0m'
-  else:
-    return '\033[31mError: Website not found\033[0m'
-
+  url = website_url 
+  if not website_url.startswith("https://"):
+    url = ('https://'+ url)
+  r = requests.get(url)
+  data = r.json()
+  return data
+  
 def jsontodict(json_data):
   '''Converts the json data to a dictionary.'''
   return json.loads(json_data)
@@ -119,3 +115,9 @@ def readfile(filename):
     return data
   except FileNotFoundError:
     return '\033[31mError: File not found\033[0m'
+
+def typewrite(text):
+  for char in text:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(0.1)
