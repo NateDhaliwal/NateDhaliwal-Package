@@ -22,7 +22,7 @@ In addition, you may convert JSON data, and vice-versa. Perfect for dealing with
 ## Examples of code
 ### Functions
 
-- `display(text, colour)`: Displays text in the output, with an optional color or effect feature. If the colour field is left empty, it acts like a normal `print()` statement.
+- `display(text, colour,typewriter)`: Displays text in the output, with an optional color or effect feature, or a typewriter-style display. If the colour field is left empty, it acts like a normal `print()` statement.
   #### The list of colours/effects are:
   - Bold
   - Italic
@@ -34,6 +34,8 @@ In addition, you may convert JSON data, and vice-versa. Perfect for dealing with
   - Blue
   - Purple
   - Grey
+<br>
+The typewriter must be specified when using it, setting it to True. It's off by default.
 - `clear()`: Clears the output screen.
 - `randnum(start, end)`: Gets a random number from the range given.
 - `randomlist(listName)`: Picks a random value from a provided list.
@@ -45,7 +47,6 @@ In addition, you may convert JSON data, and vice-versa. Perfect for dealing with
 - `writefile(filename, data)`: Adds the data to the specified file.
 - `createfile(filename)`: Creates a new file with the specified name.
 - `readfile(filename)`: Reads the specified file and returns the data.
-- `typewrite(text)`: Creates a typewriter effect for the text printed.
 <hr>
 
 ## More coming soon!

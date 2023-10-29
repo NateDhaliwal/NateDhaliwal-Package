@@ -5,7 +5,7 @@ import time
 import sys
 import requests
 
-def display(text, colour=None):
+def display(text, colour=None, typewriter=False):
   '''Displays text in the output, with the optional colour feature.'''
   empty = "\033[0m"
   bold = "\033[1m"
@@ -34,17 +34,31 @@ def display(text, colour=None):
   }
 
   if colour:
-    # Check if a color was specified
-    formatted_text = color_dict.get(colour.lower())
-    if formatted_text:
-      # If the specified color is recognized, apply the formatting
-      print(f'{formatted_text}{text}\033[0m')
+    if typewriter:
+      # Check if a color was specified
+      formatted_text = color_dict.get(colour.lower())
+      if formatted_text:
+        # If the specified color is recognized, apply the formatting
+        for char in text:
+          words=f'{formatted_text}{char}\033[0m'
+          sys.stdout.write(words)
+          sys.stdout.flush()
+          time.sleep(0.1)
+      else:
+        # If the specified color is not recognized, print an error message
+        print('Unknown colour')
     else:
-      # If the specified color is not recognized, print an error message
-      print('Unknown colour')
+      formatted_text = color_dict.get(colour.lower())
+      print(f'{formatted_text}{text}\033[0m')
   else:
-    # If no color was specified, print the text without any formatting
-    print(text)
+    if typewriter:
+      for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    else:
+      # If no color was specified, print the text without any formatting
+      print(text)
 
 
 def clear():
@@ -115,9 +129,3 @@ def readfile(filename):
     return data
   except FileNotFoundError:
     return '\033[31mError: File not found\033[0m'
-
-def typewrite(text):
-  for char in text:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(0.1)

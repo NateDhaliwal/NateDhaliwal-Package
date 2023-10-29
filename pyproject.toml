@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "natedhaliwal"
-version = "1.1.1"
+version = "1.2.0"
 description = "A simple package to help code Python easier."
 authors = ["Nate Dhaliwal <nathaniel.shaan@gmail.com>"]
 readme = "README.md"

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='natedhaliwal',
-    version='1.1.1',
+    version='1.2.0',
     description='A package that makes Python easier.',
     author='Nate Dhaliwal',
     author_email='nathaniel.shaan@gmail.com',
