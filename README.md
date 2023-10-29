@@ -45,6 +45,7 @@ In addition, you may convert JSON data, and vice-versa. Perfect for dealing with
 - `writefile(filename, data)`: Adds the data to the specified file.
 - `createfile(filename)`: Creates a new file with the specified name.
 - `readfile(filename)`: Reads the specified file and returns the data.
+- `typewrite(text)`: Creates a typewriter effect for the text printed.
 <hr>
 
 ## More coming soon!
