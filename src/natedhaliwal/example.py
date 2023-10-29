@@ -59,7 +59,7 @@ def randnum(start,end):
   '''Gets a random number from the range given.'''
   return random.randint(start,end)
 
-def randomList(listName):
+def randomlist(listName):
   '''Picks a random value of a list provided, either referenced or entered in the parentheses.'''
   return random.choice(listName)
 

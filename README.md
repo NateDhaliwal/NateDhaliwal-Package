@@ -36,7 +36,7 @@ In addition, you may convert JSON data, and vice-versa. Perfect for dealing with
   - Grey
 - `clear()`: Clears the output screen.
 - `randnum(start, end)`: Gets a random number from the range given.
-- `randomList(listName)`: Picks a random value from a provided list.
+- `randomlist(listName)`: Picks a random value from a provided list.
 - `wait(seconds)`: Pauses the program for the specified number of seconds.
 - `scrape(website_url)`: Scrapes the given website and returns the data in JSON format.
 - `jsontodict(json_data)`: Converts JSON data to a dictionary.
