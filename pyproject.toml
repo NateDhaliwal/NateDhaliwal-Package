@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "natedhaliwal"
-version = "1.2.0"
-description = "A simple package to help code Python easier."
+version = "1.2.2"
+description = "A simple package to help code Python easier. Long functions with difficult parameters? Shortened!"
 authors = ["Nate Dhaliwal <nathaniel.shaan@gmail.com>"]
 readme = "README.md"
 classifiers = [

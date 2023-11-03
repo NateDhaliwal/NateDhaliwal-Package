@@ -2,8 +2,8 @@ from setuptools import setup
 
 setup(
     name='natedhaliwal',
-    version='1.2.0',
-    description='A package that makes Python easier.',
+    version='1.2.2',
+    description='A simple package to help code Python easier. Long functions with difficult parameters? Shortened!',
     author='Nate Dhaliwal',
     author_email='nathaniel.shaan@gmail.com',
     url='https://github.com/NateDhaliwal/NateDhaliwal-Package',

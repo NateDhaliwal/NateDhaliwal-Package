@@ -63,11 +63,7 @@ def display(text, colour=None, typewriter=False):
 
 def clear():
   '''Clears the output to a blank screen.'''
-  name=os.name
-  if name=='nt':
-    os.system('cls')
-  elif name=='posix':
-    os.system('clear')
+  print("\033[H\033[2J", end="", flush=True)
 
 def randnum(start,end):
   '''Gets a random number from the range given.'''
@@ -129,3 +125,4 @@ def readfile(filename):
     return data
   except FileNotFoundError:
     return '\033[31mError: File not found\033[0m'
+
